@@ -1,0 +1,45 @@
+.header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat (3, 1fr);
+
+  width: 100%;
+  /* border: 1px solid yellow; */
+  justify-items: center;
+}
+
+.headerTitle {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  /* border: 1px solid rgb(82, 21, 153); */
+}
+
+.headerText {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  /* border: 1px solid rgb(82, 21, 153); */
+  justify-self: center;
+  align-self: center;
+}
+
+.headerDivButton {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.divForBlocks {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.contacts,
+.footerDiv {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
